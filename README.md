@@ -82,10 +82,10 @@ The following functions are void and need to be implemented by you to suit your 
 1. FCM::remove_registration_id()
     This is automatically called when one or more of the provided tokens is now unregistered, therefore it needs to be deleted from your database/storage since its basically of no use. It takes the token as the single parameter
 ```php
-$fcm->remove_registration_id();
+$fcm->remove_registration_id($token);
 ```
-2. FCM::update_registration_id($old, $new)
+2. FCM::update_registration_id()
     This is automatically called when one or more of the provided tokens has changed to a new one and your records need to be updated. It takes the old token as the first parameter and the new token as the second parameter
 ```php
-$fcm->remove_registration_id($old, new);
+$fcm->remove_registration_id($old, $new);
 ```
