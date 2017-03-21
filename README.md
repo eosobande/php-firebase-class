@@ -3,7 +3,7 @@ FCM -- Simple Firebase FCM Notification class
 ### Table of Contents
 **[Initialization](#initialization)**  
 **[Notifications](#notification)**  
-**[Topics](#topics)**
+**[Topics](#topics)**  
 **[Implement theese functions](#implement-these-functions)**
 
 ### Installation
