@@ -31,7 +31,7 @@ $fcm = new FCM(FCM::CONTENT_TEXT, 60*60*24*5, 'username');
 
 Send notifications to one registration token
 ```php
-$token = ['ouvh;nov'nb:APAp[ij'rvk'JcLlK0p1U_RZ3-qqpMt6SoaTfsYGDuEBhfL6QpOMQpRGU09tI10xSuSwcIfmqQOvCVfpJMx_0jpovjevn;evetBW2Ro4V'];
+$token = ['ouvh;novnb:APAp[ijrvkJcLlK0p1U_RZ3-qqpMt6SoaTfsYGDuEBhfL6QpOMQpRGU09tI10xSuSwcIfmqQOvCVfpJMx_0jpovjevn;evetBW2Ro4V'];
 $body = "New weather update";
 $data = ['temperature'=>'10', 'humidity'=>987];
 
@@ -40,7 +40,7 @@ $fcm->notification($token, $body, $data);
 
 or Send notifications with a different title than the APP_NAME constant value
 ```php
-$token = ['ouvh;nov'nb:APAp[ij'rvk'JcLlK0p1U_RZ3-qqpMt6SoaTfsYGDuEBhfL6QpOMQpRGU09tI10xSuSwcIfmqQOvCVfpJMx_0jpovjevn;evetBW2Ro4V'];
+$token = ['ouvh;novnb:APAp[ijrvkJcLlK0p1U_RZ3-qqpMt6SoaTfsYGDuEBhfL6QpOMQpRGU09tI10xSuSwcIfmqQOvCVfpJMx_0jpovjevn;evetBW2Ro4V'];
 $body = "New application update available";
 $title = APP_NAME . ' version 3.4.5.0'
 
@@ -50,7 +50,7 @@ $fcm->notification($token, $body, null, $title);
 or Send notifications with a list of tokens (multiple devices)
 ```php
 // 8 android devices
-$token = ['ouvh;nov'nb:APAp[ij'rvk'JcLlK0p1U_RZ3-qqpMt6SoaTfsYGDuEBhfL6QpOMQpRGU09tI10xSuSwcIfmqQOvCVfpJMx_0jpovjevn;evetBW2Ro4V', 'ouvh;nov'nb:APAp[ij'rvk'JcLlK0p1U_RZ3-qqpMt6SoaTfsYGDuEBhfL6QpOMQpRGU09tI10xSuSwcIfmqQOvCVfpJMx_0jpovjevn;evetBW2Ro4V', 'ouvh;nov'nb:APAp[ij'rvk'JcLlK0p1U_RZ3-qqpMt6SoaTfsYGDuEBhfL6QpOMQpRGU09tI10xSuSwcIfmqQOvCVfpJMx_0jpovjevn;evetBW2Ro4V', 'ouvh;nov'nb:APAp[ij'rvk'JcLlK0p1U_RZ3-qqpMt6SoaTfsYGDuEBhfL6QpOMQpRGU09tI10xSuSwcIfmqQOvCVfpJMx_0jpovjevn;evetBW2Ro4V', 'ouvh;nov'nb:APAp[ij'rvk'JcLlK0p1U_RZ3-qqpMt6SoaTfsYGDuEBhfL6QpOMQpRGU09tI10xSuSwcIfmqQOvCVfpJMx_0jpovjevn;evetBW2Ro4V', 'ouvh;nov'nb:APAp[ij'rvk'JcLlK0p1U_RZ3-qqpMt6SoaTfsYGDuEBhfL6QpOMQpRGU09tI10xSuSwcIfmqQOvCVfpJMx_0jpovjevn;evetBW2Ro4V', 'ouvh;nov'nb:APAp[ij'rvk'JcLlK0p1U_RZ3-qqpMt6SoaTfsYGDuEBhfL6QpOMQpRGU09tI10xSuSwcIfmqQOvCVfpJMx_0jpovjevn;evetBW2Ro4V', 'ouvh;nov'nb:APAp[ij'rvk'JcLlK0p1U_RZ3-qqpMt6SoaTfsYGDuEBhfL6QpOMQpRGU09tI10xSuSwcIfmqQOvCVfpJMx_0jpovjevn;evetBW2Ro4V'];
+$token = ['ouvh;novnb:APAp[ijrvkJcLlK0p1U_RZ3-qqpMt6SoaTfsYGDuEBhfL6QpOMQpRGU09tI10xSuSwcIfmqQOvCVfpJMx_0jpovjevn;evetBW2Ro4V', 'ouvh;novnb:APAp[ijrvkJcLlK0p1U_RZ3-qqpMt6SoaTfsYGDuEBhfL6QpOMQpRGU09tI10xSuSwcIfmqQOvCVfpJMx_0jpovjevn;evetBW2Ro4V', 'ouvh;novnb:APAp[ijrvkJcLlK0p1U_RZ3-qqpMt6SoaTfsYGDuEBhfL6QpOMQpRGU09tI10xSuSwcIfmqQOvCVfpJMx_0jpovjevn;evetBW2Ro4V', 'ouvh;novnb:APAp[ijrvkJcLlK0p1U_RZ3-qqpMt6SoaTfsYGDuEBhfL6QpOMQpRGU09tI10xSuSwcIfmqQOvCVfpJMx_0jpovjevn;evetBW2Ro4V', 'ouvh;novnb:APAp[ijrvkJcLlK0p1U_RZ3-qqpMt6SoaTfsYGDuEBhfL6QpOMQpRGU09tI10xSuSwcIfmqQOvCVfpJMx_0jpovjevn;evetBW2Ro4V', 'ouvh;novnb:APAp[ijrvkJcLlK0p1U_RZ3-qqpMt6SoaTfsYGDuEBhfL6QpOMQpRGU09tI10xSuSwcIfmqQOvCVfpJMx_0jpovjevn;evetBW2Ro4V', 'ouvh;novnb:APAp[ijrvkJcLlK0p1U_RZ3-qqpMt6SoaTfsYGDuEBhfL6QpOMQpRGU09tI10xSuSwcIfmqQOvCVfpJMx_0jpovjevn;evetBW2Ro4V', 'ouvh;novnb:APAp[ijrvkJcLlK0p1U_RZ3-qqpMt6SoaTfsYGDuEBhfL6QpOMQpRGU09tI10xSuSwcIfmqQOvCVfpJMx_0jpovjevn;evetBW2Ro4V'];
 
 $body = "New weather update";
 $data = ['temperature'=>'10', 'humidity'=>987];
